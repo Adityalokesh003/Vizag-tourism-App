@@ -1,0 +1,30 @@
+<%include ../partials/header%>
+<div class="container">
+	<a href="/visitingplaces" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>Go Back </a>
+	
+<div class="row">
+	<h1 style="text-align: center; color: blue; text-decoration: underline;">Edit Comment</h1>
+	<div style = "margin: 20px auto; width: 30%;">
+		
+		<form action="/visitingplaces/<%=visitingplace_id%>/comments/<%=comment._id%>?_method=PUT" method="POST">
+			 
+			<div class="form-group">
+				<input class="form-control" type="text"  name="comment[text]" value="<%=comment.text%>">
+			</div>
+			  
+			
+			
+			<button class="btn btn-lg btn-primary btn-block">Update Comment</button>
+
+		</form>
+		
+	</div>
+
+	
+</div>
+ 
+
+
+</div>
+
+<%include ../partials/footer%>

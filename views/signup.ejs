@@ -1,0 +1,23 @@
+<%include ./partials/header%>
+
+   
+<div class="row">
+	<h1 style="text-align: center; color: blue; "> Signup Page</h1>
+	<div style = "margin: 20px auto; width: 20%;">
+		
+		<form action="/signup" method="POST" name="signup" onsubmit="return validateUsername()"  >
+			<div class="form-group">
+				<label  for="username">Username : </label> 
+				<input class="form-control"  type="text" name="username" id="username" placeholder="ex: bob@123" required  >
+			</div>
+			<div class="form-group">
+				<label for="password">Password : </label> 
+				<input class="form-control" type="password" name="password" id="password" placeholder="ex: Bob@pword" required  >
+			</div>
+ 			<input type="submit" name="submit" class="btn btn-primary btn-lg btn-block">
+ 		</form>
+		
+	</div>
+ </div>
+<%include ./partials/footer%>
+

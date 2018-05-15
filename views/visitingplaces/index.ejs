@@ -1,0 +1,55 @@
+<%include ../partials/header%>
+
+	<div class="container">
+		
+		
+			<header class="jumbotron" id="vplacebg">
+				<div class="container" style="text-align: center;" >
+					<h1 style="color: #5144b9;"> Welcome to Vizag-Tourism</h1>
+					<p style="color: #05bbb9;font-family:  Courier New;">here you will see beautiful places to be visited all over <strong>Vizag</strong></p>
+	 			</div>
+	 		</header>
+	 		
+	 		<a href="/" class="btn btn-primary btn-sm"  ><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Go Back</a>
+			<br>
+			<br><br>
+			<br>
+
+
+	  		 <a href="/visitingplaces/new" class="btn btn-primary btn-large">Add a new place</a> 
+
+	  		 <div class="row">
+	  		 	<div class="col-lg-12">
+	  		 		<h3>Our most popular places</h3>
+	  		 	</div>
+	  		 </div>
+	  		 <div class="row text-center"  style = "display : flex ; flex-wrap : wrap;" >
+		  		 <% visitingplaces.forEach(function(visitingplace){%>
+
+		  		 
+		  		 	<div class="col-md-3 col-sm-6">
+		  		 		<div class="thumbnail">
+ 						 	<img  " src="<%=visitingplace.image%>" >
+						 	<div class="caption">
+						 		<h5><%=visitingplace.name%></h5>
+						 	</div>
+						 	<p>
+						 		<a href="/visitingplaces/<%=visitingplace._id%>" class="btn btn-primary btn-sm">More Info</a>
+						 	</p>
+					 	</div>
+		  		 		
+		  		 	</div>
+		  		 	
+		  		 
+				
+					  
+				<%});%>
+			</div>
+
+			 
+		 
+			 
+			
+	</div>
+
+<%include ../partials/footer%>

@@ -1,0 +1,74 @@
+ body {
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlfOpjxsGbA4jU0JzDcZOzmJu2SVvT3mSQaoB7lnP_9c3mX0oW);
+	background-size: cover;
+	background-position: center ;
+	box-sizing: border-box;
+	font-family:  Times;
+
+	z-index: -1;
+  
+}
+.carousel,.item,.active{
+   height:100%;
+ }
+.carousel-inner{
+    height:100%;
+}
+
+ .thumbnail img {
+ 	width: 100%;
+ }
+ .thumbnail {
+ 	padding: 0;
+ }
+.thumbnail .caption-full {
+	padding : 9px;
+}
+
+#delete-form {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+/* Edit and delete button width*/
+ .width {
+	width: 90px;
+}
+.pull-right {
+	padding-top: 30px;
+}
+#flash-message {
+	text-align: center;
+}
+ 
+img {
+	width: 100%;
+	object-fit: contain;
+	padding: 0;
+
+}
+
+#vplacebg {
+	z-index: -1;
+	padding: 0;
+
+
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgvWoxrWM009VPeh9HLtdrUfZmowhG53_IYPLwRWGBDGFJ7qU_A);
+}
+
+carousel-inner {
+	  padding: 0;
+}
+#control {
+	position:  fixed;
+	top: 35%;
+
+}
+
+.landing {
+	position: fixed;
+	 
+	bottom: 20%;
+	margin: auto auto;
+	z-index: 1;
+}
